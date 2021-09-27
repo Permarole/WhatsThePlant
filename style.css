@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #058c42;
+  --secondary-color: #e3fbce;
+  --border-color: #04471c;
+  --acent-color: #ec7c32;
+  --bg-color: #fffef8;
+  --heading-color: #292922;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/*---------------------- Header ------------------- */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-image: url("./assets/header_decoration_resized.svg");
+  background-repeat: no-repeat;
+  background-position-x: 1em;
+}
+
+.backgroundLogo {
+  height: 70px;
+  width: 70px;
+  background-color: var(--primary-color);
+  margin: 10px;
+  border-radius: 50%;
+}
+
+/*-------------------------HERO----------------------*/
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  color: white;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+/*----------------------GAME-------------------------*/
+
+.game {
+  margin: 1em;
+  display: grid;
+  grid-template: 1fr 260px 2fr / 1fr;
+  border: black solid 1px;
+}
+
+.answers {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  border: 3px solid blue;
+}
+
+.answer {
+  border: 1px solid red;
+}
