@@ -19,7 +19,7 @@ body {
 
 /*---------------------- Header ------------------- */
 
-.logo {
+.header {
   display: flex;
   justify-content: center;
   background-image: url("./assets/header_decoration_resized.svg");
@@ -27,13 +27,18 @@ body {
   background-position-x: 1em;
 }
 
+
 .backgroundLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 70px;
   width: 70px;
   background-color: var(--primary-color);
   margin: 10px;
   border-radius: 50%;
 }
+
 
 /*-------------------------HERO----------------------*/
 
