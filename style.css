@@ -30,8 +30,8 @@ img {
   background-image: url('./assets/header_decoration_resized.svg');
   background-repeat: no-repeat;
   background-position-x: 1em;
+  width: 100%;
 }
-
 
 .backgroundLogo {
   display: flex;
@@ -44,6 +44,70 @@ img {
   border-radius: 50%;
 }
 
+/*---------------------Slidder Dark Mode-------------*/
+
+/* The switch - the box around the slider */
+.switch {
+  margin: 2em;
+  width: 80px;
+  height: 40px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+  background-color: var(--border-color);
+  transition: 0.4s;
+}
+
+/* The Knob */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 32px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--primary-color);
+  transition: 0.4s;
+}
+
+/* Determine behavior while checked */
+input:checked + .slider {
+  background-color: var(--bg-color);
+  border: var(--border-color) 1px solid;
+}
+
+/* Determine behavior on focus */
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 /*-------------------------HERO----------------------*/
 
