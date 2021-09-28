@@ -75,7 +75,7 @@ img {
 /* The Knob */
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 32px;
   width: 32px;
   left: 4px;
@@ -155,7 +155,7 @@ input:checked + .slider:before {
   align-items: center;
 }
 
-.game__answers__item input[type='checkbox'] {
+.game__answers__item input[type='radio'] {
   display: none;
 }
 
@@ -167,7 +167,7 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-.game__answers__item input[type='checkbox']:checked + span {
+.game__answers__item input[type='radio']:checked + span {
   background-color: var(--primary-color);
 }
 
