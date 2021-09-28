@@ -19,16 +19,40 @@
     <section class="hero">
       <h1>What's The Plant ?!</h1>
     </section>
+
     <section class="game">
-      <h3 class="intro">Test your knwoledge :</h3>
-      <div class="plantImg">
-        <img src="#" alt="plant you have to determine" />
+      <h3 class="game__intro">Test your knowledge:</h3>
+      <div class="game__plant__image__container">
+        <img
+          src="./assets/plant_marguerite.jpg"
+          alt="Plant you have to determine"
+          class="game__plant__image__img"
+        />
       </div>
-      <div class="answers">
-        <div class="answer" id="answer1">lorem</div>
-        <div class="answer" id="answer2">lorem</div>
-        <div class="answer" id="answer3">lorem</div>
-        <div class="answer" id="answer4">lorem</div>
+      <div class="game__answers">
+        <label class="game__answers__item" id="answer1"
+          ><input type="checkbox" name="answer1" value="answer1" />
+          <span class="game__answers__item__text" >lorem</span
+          >
+        </label>
+        <label class="game__answers__item" id="answer2"
+          ><input type="checkbox" name="answer2" value="answer2" />
+          <span class="game__answers__item__text" >lorem</span
+          >
+        </label>
+        <label class="game__answers__item" id="answer3"
+          ><input type="checkbox" name="answer3" value="answer3" />
+          <span class="game__answers__item__text" >lorem</span
+          >
+        </label>
+        <label class="game__answers__item" id="answer4"
+          ><input type="checkbox" name="answer4" value="answer4" />
+          <span class="game__answers__item__text" >lorem</span
+          >
+        </label>
+
+        </div>
+        <input type="Submit" class="game__answers__submit" />
       </div>
     </section>
     <footer></footer>
