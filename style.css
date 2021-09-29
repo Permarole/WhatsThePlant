@@ -27,7 +27,7 @@ img {
 .headerContainer {
   display: flex;
   justify-content: center;
-  background-image: url("./assets/header_decoration_resized.svg");
+  background-image: url('./assets/header_decoration_resized.svg');
   background-repeat: no-repeat;
   background-position-x: 1em;
   width: 100%;
@@ -75,7 +75,7 @@ img {
 /* The Knob */
 .headerContainer__switch__slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 32px;
   width: 32px;
   left: 4px;
@@ -157,7 +157,7 @@ input:checked + .headerContainer__switch__sliderr:before {
   align-items: center;
 }
 
-.game__answers__item input[type="radio"] {
+.game__answers__item input[type='radio'] {
   display: none;
 }
 
@@ -167,9 +167,10 @@ input:checked + .headerContainer__switch__sliderr:before {
   line-height: 3rem;
   width: 100%;
   text-align: center;
+  cursor: pointer;
 }
 
-.game__answers__item input[type="radio"]:checked + span {
+.game__answers__item input[type='radio']:checked + span {
   background-color: var(--secondary-color);
 }
 
@@ -181,4 +182,5 @@ input:checked + .headerContainer__switch__sliderr:before {
   line-height: 3rem;
   background-color: var(--primary-color);
   color: white;
+  cursor: pointer;
 }

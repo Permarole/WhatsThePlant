@@ -46,9 +46,12 @@ function game(plants) {
   console.log(plantToGuess);
 
   // Submit button on click event listener
-  submitButton.addEventListener('click', () => {
-    gameSubmit(plantToGuess);
-  });
+  submitButton.addEventListener('click', handleClickSubmit);
+
+  function handleClickSubmit() {
+    gameSubmit(plantToGuess, submitButton);
+    submitButton.removeEventListener('click', handleClickSubmit);
+  }
 }
 
 // Function assign plant to radio button input
@@ -112,11 +115,26 @@ function gameSubmit(plantToGuess) {
     }
   }
 
+  const answerText = Array.from(
+    document.getElementsByClassName('game__answers__item__text')
+  );
+
+  answerText.forEach((span) => {
+    span.style.backgroundColor = '#CCC';
+  });
+
   // Check if radio button checked value is equal to plant to guess name
   if (answerInputChecked.value === plantToGuess['name']) {
-    
+    answerInputChecked.nextElementSibling.style.backgroundColor = '#058c42';
     console.log('yes');
   } else {
+    answerInputChecked.nextElementSibling.style.backgroundColor = '#ec7c32';
+    answerText.forEach((span) => {
+      if (span.innerHTML === plantToGuess['name']) {
+        span.style.backgroundColor = '#058c42';
+      }
+    });
+
     console.log('no');
   }
 }
