@@ -114,6 +114,7 @@ function gameSubmit(plantToGuess) {
 
   // Check if radio button checked value is equal to plant to guess name
   if (answerInputChecked.value === plantToGuess['name']) {
+    
     console.log('yes');
   } else {
     console.log('no');
