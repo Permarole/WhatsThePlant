@@ -1,3 +1,5 @@
+import { plantsArray } from './scriptJSON.js';
+
 const gameImage = document.getElementById('gameImage');
 
 const answerInput1 = document.getElementById('answer1');
@@ -13,46 +15,52 @@ const answerTexts = [answerText1, answerText2, answerText3, answerText4];
 
 const submitButton = document.getElementById('answerSubmit');
 
-plants = [
+plantsArray.then((data) => {
+  const plants2 = data;
+  console.log(plants2);
+  game(plants2);
+});
+
+const plants3 = [
   {
     name: 'marguerite',
     picture:
       'https://cdn.pixabay.com/photo/2021/01/29/06/28/marguerite-5959944_960_720.jpg',
-    bioType: 'annual',
-    toxic: false,
-    height: '40-100cm',
+    bioType: 'perennial',
+    toxic: true,
+    height: '30-75cm',
     flowerColor: 'white',
-    local: false,
+    local: true,
   },
   {
-    name: 'marguerite2',
+    name: 'tulipe',
     picture:
-      'https://cdn.pixabay.com/photo/2021/01/29/06/28/marguerite-5959944_960_720.jpg',
-    bioType: 'annual',
+      'https://cdn.pixabay.com/photo/2018/05/10/23/22/tulips-3389122_960_720.jpg',
+    bioType: 'perennial',
     toxic: false,
     height: '40-100cm',
-    flowerColor: 'white',
-    local: false,
+    flowerColor: 'yellow to red',
+    local: true,
   },
   {
-    name: 'marguerite3',
+    name: 'aster',
     picture:
-      'https://cdn.pixabay.com/photo/2021/01/29/06/28/marguerite-5959944_960_720.jpg',
-    bioType: 'annual',
+      'https://cdn.pixabay.com/photo/2021/08/24/18/24/aster-6571381_960_720.jpg',
+    bioType: 'perennial',
     toxic: false,
-    height: '40-100cm',
-    flowerColor: 'white',
-    local: false,
+    height: '15-60cm',
+    flowerColor: 'violet',
+    local: true,
   },
   {
-    name: 'marguerite4',
+    name: 'genêt à balai',
     picture:
-      'https://cdn.pixabay.com/photo/2021/01/29/06/28/marguerite-5959944_960_720.jpg',
-    bioType: 'annual',
-    toxic: false,
-    height: '40-100cm',
-    flowerColor: 'white',
-    local: false,
+      'https://cdn.pixabay.com/photo/2015/07/22/13/17/cytisus-scoparius-855392_960_720.jpg',
+    bioType: 'perennial',
+    toxic: true,
+    height: '100-300cm',
+    flowerColor: 'yellow',
+    local: true,
   },
   {
     name: 'marguerite5',
@@ -76,9 +84,10 @@ plants = [
   },
 ];
 
-function game() {
+function game(plants) {
   // Copy plants array
   const plantsForTurn = plants.slice();
+  console.log(plantsForTurn);
   // Copy radio button inputs array
   const answerInputsForTurn = answerInputs.slice();
   // Copy <span> text array
@@ -177,5 +186,3 @@ function gameSubmit(plantToGuess) {
 function getRandomNum(min, max) {
   return min + Math.floor(Math.random() * (max - min));
 }
-
-game();

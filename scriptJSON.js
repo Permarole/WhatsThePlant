@@ -1,16 +1,16 @@
-let requestURL = "./dataBase.json";
+let requestURL = './dataBase.json';
 
-let imgDiv = document.querySelector(".game__plant__image__img");
+let imgDiv = document.querySelector('.game__imageContainer__img');
 
-
-
-fetch(requestURL)
-  .then((response) => response.json())
-  .then(function (data) {
-    return defImg(data);
-  });
+const plantsArray = fetch(requestURL).then((response) => response.json());
+// .then(function (data) {
+//   return defImg(data);
+// });
 
 function defImg(toto) {
+  console.log(toto);
   imgDiv.src = toto[0].rose.url;
-  console.log(img.src);
+  console.log(imgDiv.src);
 }
+
+export { plantsArray };
