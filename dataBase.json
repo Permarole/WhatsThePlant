@@ -1,0 +1,62 @@
+[
+  {
+    "rose": 
+      {
+        "url": "./assets/headerDecoration.svg",
+        "bioType": "Perronnial",
+        "toxic": 0,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+      }
+    
+  },
+  {
+    "marguerite": [
+      {
+        "url": ".assets/marguerite.png",
+        "bioType": "perronnial",
+        "toxic": 0,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+      }
+    ]
+  },
+  {
+    "fraise": [
+      {
+        "url": ".assets/fraise.png",
+        "bioType": "perronnial",
+        "toxic": 0,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+      }
+    ]
+  },
+  {
+    "jacinthe": [
+      {
+        "url": ".assets/jacinthe.png",
+        "bioType": "perronnial",
+        "toxic": 0,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+      }
+    ]
+  },
+  {
+    "azalé": [
+      {
+        "url": ".assets/azalé.png",
+        "bioType": "perronnial",
+        "toxic": 0,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+      }
+    ]
+  },
+  {
+    "edelweiss": [
+      {
+        "url": ".assets/edelweiss.png",
+        "bioType": "annual",
+        "toxic": 0,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+      }
+    ]
+  }
+]
