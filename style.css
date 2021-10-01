@@ -1,11 +1,10 @@
 :root {
-	--primary-color: #058c42;
-	--secondary-color: #e3fbce;
-	--border-color: #04471c;
-	--accent-color: #ec7c32;
-	--bg-color: #fffef8;
-	--heading-color: #292922;
-
+  --primary-color: #058c42;
+  --secondary-color: #e3fbce;
+  --border-color: #04471c;
+  --accent-color: #ec7c32;
+  --bg-color: #fffef8;
+  --heading-color: #292922;
 
   /*-----------DarkMode Color---------------*/
   --bg-dark-color: #494949;
@@ -209,27 +208,64 @@ input:focus + .headerContainer__switch__slider {
 .addPlant__item {
   display: flex;
   align-items: center;
+  margin: 2rem 0;
+  padding: 1.3rem 3rem;
+  border: 2px solid var(--border-color);
+  border-radius: 1.5rem;
+  position: relative;
+  box-shadow: inset 0 -4px 10px rgb(160, 160, 160);
+}
+
+.darkMode .addPlant__item {
+  border: 2px solid var(--bg-color);
+  box-shadow: inset 0 -10px 10px var(--heading-color);
 }
 
 .addPlant__item__label {
-  margin: 1rem 0;
-  width: 6rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: var(--border-color);
+  margin: 0 0 0 1rem;
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  background-color: var(--bg-color);
+  padding: 0 0.8rem;
 }
 
-.addPlant__submit {
+.darkMode .addPlant__item__label {
+  color: var(--bg-color);
+  background-color: var(--bg-dark-color);
+}
+
+.addPlantForm input {
+  /* width: 100%; */
+  background-color: transparent;
+  border: none;
+}
+
+input[type='radio']:nth-of-type(2) {
+  margin-left: 3rem;
+}
+
+.addPlantForm .addPlant__submit {
   appearance: none;
   display: block;
   color: var(--bg-color);
   font-weight: bold;
   border: none;
-  margin: 1rem auto;
+  margin: 3rem auto;
   width: 60%;
   padding: 0.8rem 0;
-  border-radius: 2rem;
-  background-color: var(--primary-color);
+  border-radius: 1rem;
+  background-color: var(--border-color);
   transition: background-color 0.3s ease;
   border: 2px solid transparent;
+}
+
+.darkMode .addPlant__submit {
+  background-color: var(--bg-color);
+  color: var(--heading-color);
 }
 
 .addPlant__submit:hover {
