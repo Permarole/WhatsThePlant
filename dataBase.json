@@ -1,72 +1,86 @@
 [
 	{
-		"name": "marguerite",
-		"picture": "https://cdn.pixabay.com/photo/2021/01/29/06/28/marguerite-5959944_960_720.jpg",
-		"bioType": "perennial",
-		"toxic": true,
-		"height": "30-75cm",
-		"flowerColor": "white",
-		"local": true,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		"marguerite": {
+			"name": "marguerite",
+			"picture": "https://cdn.pixabay.com/photo/2021/01/29/06/28/marguerite-5959944_960_720.jpg",
+			"bioType": "perethis.nnial",
+			"toxic": true,
+			"height": "30-75cm",
+			"flowerColor": "white",
+			"local": true,
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		}
 	},
 	{
-		"name": "tulipe",
-		"picture": "https://cdn.pixabay.com/photo/2018/05/10/23/22/tulips-3389122_960_720.jpg",
-		"bioType": "perennial",
-		"toxic": false,
-		"height": "40-100cm",
-		"flowerColor": "yellow to red",
-		"local": true,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		"tulipe": {
+			"name": "tulipe",
+			"picture": "https://cdn.pixabay.com/photo/2018/05/10/23/22/tulips-3389122_960_720.jpg",
+			"bioType": "perennial",
+			"toxic": false,
+			"height": "40-100cm",
+			"flowerColor": "yellow to red",
+			"local": true,
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		}
 	},
 	{
-		"name": "aster",
-		"picture": "https://cdn.pixabay.com/photo/2021/08/24/18/24/aster-6571381_960_720.jpg",
-		"bioType": "perennial",
-		"toxic": false,
-		"height": "15-60cm",
-		"flowerColor": "violet",
-		"local": true,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		"aster": {
+			"name": "aster",
+			"picture": "https://cdn.pixabay.com/photo/2021/08/24/18/24/aster-6571381_960_720.jpg",
+			"bioType": "perennial",
+			"toxic": false,
+			"height": "15-60cm",
+			"flowerColor": "violet",
+			"local": true,
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		}
 	},
 	{
-		"name": "genêt à balai",
-		"picture": "https://cdn.pixabay.com/photo/2015/07/22/13/17/cytisus-scoparius-855392_960_720.jpg",
-		"bioType": "perennial",
-		"toxic": true,
-		"height": "100-300cm",
-		"flowerColor": "yellow",
-		"local": true,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		"genêt à balai": {
+			"name": "genêt à balai",
+			"picture": "https://cdn.pixabay.com/photo/2015/07/22/13/17/cytisus-scoparius-855392_960_720.jpg",
+			"bioType": "perennial",
+			"toxic": true,
+			"height": "100-300cm",
+			"flowerColor": "yellow",
+			"local": true,
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		}
 	},
 	{
-		"name": "fraise",
-		"picture": "https://cdn.pixabay.com/photo/2021/09/23/05/30/strawberry-6648685_960_720.jpg",
-		"bioType": "perennial",
-		"toxic": false,
-		"height": "20-50cm",
-		"flowerColor": "white",
-		"local": true,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		"fraise": {
+			"name": "fraise",
+			"picture": "https://cdn.pixabay.com/photo/2021/09/23/05/30/strawberry-6648685_960_720.jpg",
+			"bioType": "perennial",
+			"toxic": false,
+			"height": "20-50cm",
+			"flowerColor": "white",
+			"local": true,
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		}
 	},
 	{
-		"name": "jacinthe",
-		"picture": "https://cdn.pixabay.com/photo/2017/04/04/19/26/hyacinth-2202861_960_720.jpg",
-		"bioType": "perennial",
-		"toxic": true,
-		"height": "20-30cm",
-		"flowerColor": "bleu-violet",
-		"local": false,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		"jacinthe": {
+			"name": "jacinthe",
+			"picture": "https://cdn.pixabay.com/photo/2017/04/04/19/26/hyacinth-2202861_960_720.jpg",
+			"bioType": "perennial",
+			"toxic": true,
+			"height": "20-30cm",
+			"flowerColor": "bleu-violet",
+			"local": false,
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		}
 	},
 	{
-		"name": "rose",
-		"picture": "https://cdn.pixabay.com/photo/2015/01/29/11/36/roses-616013_960_720.jpg",
-		"bioType": "perennial",
-		"toxic": false,
-		"height": "60-120cm",
-		"flowerColor": "various",
-		"local": true,
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		"rose": {
+			"name": "rose",
+			"picture": "https://cdn.pixabay.com/photo/2015/01/29/11/36/roses-616013_960_720.jpg",
+			"bioType": "perennial",
+			"toxic": false,
+			"height": "60-120cm",
+			"flowerColor": "various",
+			"local": true,
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt lorem dui, eget feugiat neque bibendum ornare. Nulla nec mauris et purus pellentesque condimentum vitae eu libero. Maecenas aliquam eu eros sit amet accumsan. Etiam consequat convallis neque at mollis. Curabitur ultricies vehicula ex ac fermentum. Curabitur a nulla nectortor consequat lacinia sed ut erat. Mauris efficitur ultricesfinibus. Nulla dignissim, tellus quis ultricies luctus, urna ipsum viverra odio, vitae aliquam velit erat eu enim. Class apte "
+		}
 	}
 ]

@@ -1,10 +1,11 @@
 :root {
-  --primary-color: #058c42;
-  --secondary-color: #e3fbce;
-  --border-color: #04471c;
-  --acent-color: #ec7c32;
-  --bg-color: #fffef8;
-  --heading-color: #292922;
+	--primary-color: #058c42;
+	--secondary-color: #e3fbce;
+	--border-color: #04471c;
+	--accent-color: #ec7c32;
+	--bg-color: #fffef8;
+	--heading-color: #292922;
+
 
   /*-----------DarkMode Color---------------*/
   --bg-dark-color: #494949;
