@@ -110,7 +110,10 @@ class Game {
   }
 
   displayPlantDescription() {
-    this.game.append(`<p>${this.plantToDefine.description}</p>`);
+    this.game.insertAdjacentHTML(
+      'beforeend',
+      `<p>${this.plantToDefine.description}</p>`
+    );
   }
 
   checkAnswer(clicked) {
