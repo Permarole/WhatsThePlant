@@ -222,7 +222,7 @@ input:focus + .headerContainer__switch__slider {
 }
 
 .addPlant__item__label {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: var(--border-color);
   margin: 0 0 0 1rem;
@@ -242,6 +242,11 @@ input:focus + .headerContainer__switch__slider {
   /* width: 100%; */
   background-color: transparent;
   border: none;
+  color: black;
+}
+
+.darkMode .addPlantForm input {
+  color: white;
 }
 
 input[type='radio']:nth-of-type(2) {

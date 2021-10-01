@@ -61,6 +61,10 @@ footer {
   margin: 2%;
 }
 
+.addPlant__item__label {
+  font-size: 1.5rem;
+}
+
 .addPlant__submit {
   max-width: 25rem;
 }
