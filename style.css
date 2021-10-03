@@ -221,6 +221,14 @@ input:focus + .headerContainer__switch__slider {
   box-shadow: inset 0 -10px 10px var(--heading-color);
 }
 
+.addPlant__item.alert {
+  border: 2px solid red;
+}
+
+.addPlant__item.success {
+  border: 2px solid var(--primary-color);
+}
+
 .addPlant__item__label {
   font-size: 1.3rem;
   font-weight: bold;
@@ -270,7 +278,7 @@ input[type='radio']:nth-of-type(2) {
 
 .darkMode .addPlant__submit {
   background-color: var(--bg-color);
-  color: var(--heading-color);
+  color: var(--heading-color) !important;
 }
 
 .addPlant__submit:hover {
