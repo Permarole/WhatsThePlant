@@ -16,11 +16,13 @@
 		<header>
 			<div class="headerContainer">
 				<div class="headerContainer__backgroundLogo">
-					<img
-						class="headerContainer__backgroundLogo__logo"
-						src="./assets/logo_resized.svg"
-						alt="logo what's the plant"
-					/><!-- TODO : anchor on logo-->
+					<a href="index.html">
+						<img
+							class="headerContainer__backgroundLogo__logo"
+							src="./assets/logo_resized.svg"
+							alt="logo what's the plant"
+						/>
+					</a>
 				</div>
 			</div>
 			<label class="headerContainer__switch">
@@ -28,9 +30,23 @@
 				<span class="headerContainer__switch__slider round"></span>
 			</label>
 		</header>
-		<section class="hero">
-			<h1 class="hero__title">What's The Plant ?!</h1>
-		</section>
+		<nav>
+			<section class="hero">
+				<h1 class="hero__title">What's The Plant ?!</h1>
+			</section>
+			<div id="menuToggle">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+
+				<ul id="menu">
+					<a href="#"><li>Home</li></a>
+					<a href="addPlant.html"><li>Add a plant</li></a>
+					<a href="library.html"><li>Dictionary</li></a>
+				</ul>
+			</div>
+		</nav>
 
 		<section class="game">
 			<h3 class="game__intro">Test your knowledge:</h3>
