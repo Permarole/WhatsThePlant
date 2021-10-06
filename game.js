@@ -26,7 +26,6 @@ class Game {
 	reset() {
 		this.plantsInfos = this.getplantsInfos();
 		this.plantToDefine = this.getOnePlant();
-		this.eventListener = this.initEventListenerOnSubmit();
 		this.initImage();
 		this.initButton();
 		this.resetButton();
@@ -88,8 +87,10 @@ class Game {
 		/* handle game's behaviors while submitted :
         - check wich button has been checked 
         - calls updateButton  (cf updateGame descripton)*/
-		if (this.isCheckeded) {
+		console.log(this.isCheckeded());
+		if (this.isCheckeded()) {
 			for (let answerButton of this.answersButtons) {
+				console.log(answerButton);
 				if (answerButton.children[0].checked) {
 					this.updateButton(answerButton, true);
 				} else {
@@ -121,11 +122,14 @@ class Game {
 		} else {
 			button.children[1].classList.toggle("notAnswered");
 		}
+		console.log(button.children[1].classList);
 	}
 
 	resetButton() {
 		for (let answerButton of this.answersButtons) {
-			this.updateButton(answerButton);
+			answerButton.children[1].classList.remove("rightAnswer");
+			answerButton.children[1].classList.remove("notAnswered");
+			answerButton.children[1].classList.remove("wrongAnswer");
 		}
 	}
 
