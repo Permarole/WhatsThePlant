@@ -2,13 +2,27 @@
   --primary-color: #058c42;
   --secondary-color: #e3fbce;
   --border-color: #04471c;
-  --acent-color: #ec7c32;
+  --accent-color: #ec7c32;
   --bg-color: #fffef8;
   --heading-color: #292922;
+  --not-answered: #ccc;
 
   /*-----------DarkMode Color---------------*/
   --bg-dark-color: #494949;
   --button-dark-color: #848484;
+}
+
+/*------------ toggle colors gestion -------------*/
+.notAnswered {
+  background-color: var(--not-answered) !important;
+}
+
+.wrongAnswer {
+  background-color: var(--accent-color) !important;
+}
+
+.rightAnswer {
+  background-color: var(--primary-color) !important;
 }
 
 .darkMode {
@@ -136,6 +150,10 @@ input:focus + .headerContainer__switch__slider {
 }
 
 /*----------------------GAME-------------------------*/
+
+.hidden {
+  display: none;
+}
 
 .game,
 .addPlant {
