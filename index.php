@@ -35,6 +35,7 @@
         <span class="game__answers__item__text" id="answerText4">lorem</span>
       </label>
     </div>
+    <p class="game_description none"></p>
     <input type="Submit" class="game__answers__submit" id="answerSubmit" />
   </section>
 

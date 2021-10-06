@@ -35,6 +35,14 @@
 	color: white;
 }
 
+.none {
+	display: none;
+}
+
+.game_description {
+	background-color: var(--secondary-color);
+}
+
 /*-------------------------------------------------------------------*/
 
 html,
@@ -66,7 +74,7 @@ img {
 	width: 100%;
 }
 
-.hero a{
+.hero a {
 	text-decoration: none;
 	color: white;
 }
@@ -204,7 +212,8 @@ input:focus + .headerContainer__switch__slider {
 	display: none;
 }
 
-.game__answers__item__text {
+.game__answers__item__text,
+.game_description {
 	border: 2px solid black;
 	border-radius: 2rem;
 	line-height: 3rem;

@@ -6,9 +6,11 @@ class Game {
 		this.gameImage = document.getElementById("gameImage");
 		this.answersButtons = document.querySelectorAll(".game__answers__item");
 		this.submitButton = document.getElementById("answerSubmit");
+		this.descriptionParagraph = document.querySelector(".game_description");
 		this.plantsInfos = undefined;
 		this.plantToDefine = undefined;
 		this.eventListener = undefined;
+		this.plantDescription = undefined;
 	}
 
 	init(data) {
@@ -18,16 +20,21 @@ class Game {
 		this.plantsData = data;
 		this.plantsInfos = this.getplantsInfos();
 		this.plantToDefine = this.getOnePlant();
+		this.plantDescription = this.getDescription();
+		this.initDescription();
 		this.eventListener = this.initEventListenerOnSubmit();
 		this.initImage();
 		this.initButton();
 	}
 
 	reset() {
+		this.displayPlantDescription();
 		this.plantsInfos = this.getplantsInfos();
 		this.plantToDefine = this.getOnePlant();
+		this.plantDescription = this.getDescription();
 		this.initImage();
 		this.initButton();
+		this.initDescription();
 		this.resetButton();
 	}
 
@@ -49,6 +56,11 @@ class Game {
 		}
 	}
 
+	initDescription() {
+		this.descriptionParagraph.innerHTML = this.plantDescription;
+		console.log(this.descriptionParagraph);
+	}
+
 	getplantsInfos() {
 		/* get 4 random element from this.plantsData :
         using set : get 4 uniques elements from this.plantsData
@@ -64,6 +76,18 @@ class Game {
 			);
 		}
 		return Array.from(set);
+	}
+
+	getDescription() {
+		console.log(
+			this.plantToDefine[Object.keys(this.plantToDefine)[0]].description
+		);
+		return this.plantToDefine[Object.keys(this.plantToDefine)[0]]
+			.description;
+	}
+
+	displayPlantDescription() {
+		this.descriptionParagraph.classList.toggle("none");
 	}
 
 	getOnePlant() {
@@ -131,15 +155,6 @@ class Game {
 			answerButton.children[1].classList.remove("notAnswered");
 			answerButton.children[1].classList.remove("wrongAnswer");
 		}
-	}
-
-	displayPlantDescription() {
-		this.game.insertAdjacentHTML(
-			"beforeend",
-			`<p class="game__description">${
-				this.plantToDefine[Object.keys(this.plantToDefine)].description
-			}</p>`
-		);
 	}
 
 	checkAnswer(clicked) {
