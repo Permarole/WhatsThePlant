@@ -120,7 +120,12 @@ class Game {
   }
 
   displayPlantDescription() {
-    this.game.append(`<p>${this.plantToDefine.description}</p>`);
+    this.game.insertAdjacentHTML(
+      'beforeend',
+      `<p class="game__description">${
+        this.plantToDefine[Object.keys(this.plantToDefine)].description
+      }</p>`
+    );
   }
 
   checkAnswer(clicked) {
