@@ -1,96 +1,96 @@
 body {
-  background-image: url('./assets/headerDecoration.svg');
-  background-position-x: 75vw;
-  background-repeat: no-repeat;
-  background-size: 20%;
+	background-image: url("./assets/headerDecoration.svg");
+	background-position-x: 75vw;
+	background-repeat: no-repeat;
+	background-size: 20%;
 }
 
 header {
-  margin-top: 2em;
-  display: flex;
-  grid-area: 1/1/1/6;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+	margin-top: 2em;
+	display: flex;
+	grid-area: 1/1/1/6;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	margin-right: auto;
 }
 
 .headerContainer {
-  justify-content: flex-start;
-  width: auto;
-  background-image: none;
-  margin: 1rem;
+	justify-content: flex-start;
+	width: auto;
+	background-image: none;
+	margin: 1rem;
 }
 
 .headerContainer__switch {
-  position: absolute;
+	position: absolute;
 }
 
 .headerContainer__switch__slider {
-  top: 0.5em;
-  right: -90vw;
+	top: 2.5em;
+	right: -97vw;
 }
 
 #menu {
-  margin-right: auto;
+	margin-right: auto;
 }
 
 #menuToggle {
 }
 
 #menuToggle input {
-  display: none;
+	display: none;
 }
 
 ul {
-  display: flex !important;
-  flex-direction: row;
-  list-style: none;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 2em 0;
-  margin: 0;
-  width: 70vw;
-  background-color: var(--primary-color);
+	display: flex !important;
+	flex-direction: row;
+	list-style: none;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 2em 0;
+	margin: 0;
+	width: 70vw;
+	background-color: var(--primary-color);
 }
 
 a {
-  text-decoration: none;
-  font-size: 2em;
+	text-decoration: none;
+	font-size: 2em;
 }
 
 .hero {
-  width: auto;
-  font-size: 2em;
-  padding: 2rem 2em;
-  color: black;
-  background-color: var(--bg-color);
+	width: auto;
+	font-size: 2em;
+	padding: 2rem 2em;
+	color: black;
+	background-color: var(--bg-color);
 }
 
 li {
-  color: white;
-  display: flex;
-  align-items: center;
-  height: 64px;
-  padding: 0 2em;
+	color: white;
+	display: flex;
+	align-items: center;
+	height: 64px;
+	padding: 0 2em;
 }
 
 .game,
 .addPlant {
-  max-width: 48rem;
+	max-width: 48rem;
 }
 
 .addPlantForm {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .addPlant__item {
-  width: 13rem;
+	width: 13rem;
 }
