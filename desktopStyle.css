@@ -1,9 +1,4 @@
-
 body {
-	display: grid;
-	grid-template: 200px 1fr / 15% 25% 20% 20% 20%;
-	justify-items: stretch;
-	align-items: stretch;
 	background-image: url("./assets/headerDecoration.svg");
 	background-position-x: 75vw;
 	background-repeat: no-repeat;
@@ -85,11 +80,11 @@ li {
 }
 
 .game {
-  display: grid;
-  grid-template: 10% 80% 10% / 60% 30% 1fr;
-  max-width: 85vh;
-  justify-items: stretch;
-  align-items: stretch;
+	display: grid;
+	grid-template: 10% 80% 10% / 60% 30% 1fr;
+	max-width: 85vh;
+	justify-items: stretch;
+	align-items: stretch;
 }
 
 .game__intro {
@@ -116,7 +111,7 @@ li {
 }
 
 .game__answers__submit {
-  grid-area: 3/1/4/2;
+	grid-area: 3/1/4/2;
 }
 
 /* Add Plant Form styling */
