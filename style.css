@@ -219,6 +219,13 @@ input:focus + .headerContainer__switch__slider {
   color: white;
 }
 
+.game__description {
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
+
 /*----------------------ADD PLANT FORM-------------------------*/
 
 .addPlantForm {
