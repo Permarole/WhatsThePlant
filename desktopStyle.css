@@ -5,6 +5,14 @@ body {
 	background-size: 20%;
 }
 
+.darkMode .hero {
+	background-color: var(--bg-dark-color);
+}
+
+.darkMode .hero > a {
+	color: white;
+}
+
 header {
 	margin-top: 2em;
 	display: flex;
@@ -16,7 +24,13 @@ header {
 nav {
 	display: flex;
 	flex-direction: row;
-	margin-right: auto;
+	justify-content: space-between;
+	margin-right: 0;
+	width: 100%;
+}
+
+.hero a {
+	color: black;
 }
 
 .headerContainer {
@@ -40,6 +54,7 @@ nav {
 }
 
 #menuToggle {
+	flex-basis: 70vw;
 }
 
 #menuToggle input {
@@ -54,11 +69,16 @@ ul {
 	align-items: center;
 	padding: 2em 0;
 	margin: 0;
-	width: 70vw;
+	width: 100%;
 	background-color: var(--primary-color);
 }
 
 a {
+	color: black;
+	text-decoration: none;
+}
+
+.menuLink {
 	text-decoration: none;
 	font-size: 2em;
 }

@@ -12,7 +12,9 @@
   </label>
   <nav>
     <section class="hero">
-      <h1 class="hero__title">What's The Plant ?!</h1>
+      <a href="index.php">
+        <h1 class="hero__title">What's The Plant ?!</h1>
+      </a>
     </section>
     <div id="menuToggle">
       <input type="checkbox" />
@@ -20,10 +22,10 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <a href="addPlant.php">
+        <a class="menuLink" href="addPlant.php">
           <li>Add a Plant</li>
         </a>
-        <a href="library.php">
+        <a class="menuLink" href="library.php">
           <li>Dictionary</li>
         </a>
       </ul>
