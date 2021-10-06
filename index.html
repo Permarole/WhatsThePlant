@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link
-			rel="stylesheet"
-			media="screen and (min-width: 1000px)"
-			href="desktopStyle.css"
-		/>
-		<title>What's The Plant</title>
-	</head>
-	<body>
-		<header>
-			<div class="headerContainer">
-				<div class="headerContainer__backgroundLogo">
-					<a href="index.html">
-						<img
-							class="headerContainer__backgroundLogo__logo"
-							src="./assets/logo_resized.svg"
-							alt="logo what's the plant"
-						/>
-					</a>
-				</div>
-			</div>
-			<label class="headerContainer__switch">
-				<input type="checkbox" onclick="toggleDarkMode()" />
-				<span class="headerContainer__switch__slider round"></span>
-			</label>
-			<nav>
-				<section class="hero">
-					<h1 class="hero__title">What's The Plant ?!</h1>
-				</section>
-				<div id="menuToggle">
-					<input type="checkbox" />
-					<span></span>
-					<span></span>
-					<span></span>
-					<ul id="menu">
-						<a href="addPlant.html"><li>Add a plant</li></a>
-						<a href="library.html"><li>Dictionary</li></a>
-					</ul>
-				</div>
-			</nav>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 750px)"
+      href="desktopStyle.css"
+    />
+    <title>What's The Plant</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div class="headerContainer__backgroundLogo">
+          <img
+            class="headerContainer__backgroundLogo__logo"
+            src="./assets/logo_resized.svg"
+            alt="logo what's the plant"
+          /><!-- TODO : anchor on logo-->
+        </div>
+      </div>
+      <label class="headerContainer__switch">
+        <input type="checkbox" onclick="toggleDarkMode()" />
+        <span class="headerContainer__switch__slider round"></span>
+      </label>
+    </header>
+    <section class="hero">
+      <h1 class="hero__title">What's The Plant ?!</h1>
+    </section>
 
     <section class="game">
       <h3 class="game__intro">Test your knowledge:</h3>
