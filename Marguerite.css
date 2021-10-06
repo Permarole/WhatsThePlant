@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #058c42;
+    --secondary-color: #e3fbce;
+    --border-color: #04471c;
+    --acent-color: #ec7c32;
+    --bg-color: #fffef8;
+    --heading-color: #292922;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: space-around;
+    background-color: var(--bg-color);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*---------------------- Header ------------------- */
+  
+  .headerContainer {
+    display: flex;
+    justify-content: center;
+    background-image: url("./assets/header_decoration_resized.svg");
+    background-repeat: no-repeat;
+    background-position-x: 1em;
+    width: 100%;
+  }
+  
+  .headerContainer__backgroundLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    background-color: var(--primary-color);
+    margin: 10px;
+    border-radius: 50%;
+  }
+  
+  /*---------------------Slidder Dark Mode-------------*/
+  
+  /* The switch - the box around the slider */
+  .headerContainer__switch {
+    margin: 2em;
+    width: 80px;
+    height: 40px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .headerContainer__switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .headerContainer__switch__slider {
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    background-color: var(--border-color);
+    transition: 0.4s;
+  }
+  
+  /* The Knob */
+  .headerContainer__switch__slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 32px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary-color);
+    transition: 0.4s;
+  }
+  
+  /* Determine behavior while checked */
+  input:checked + .headerContainer__switch__slider {
+    background-color: var(--bg-color);
+    border: var(--border-color) 1px solid;
+  }
+  
+  /* Determine behavior on focus */
+  input:focus + .headerContainer__switch__slider {
+    box-shadow: 0 0 1px black;
+  }
+  
+  input:checked + .headerContainer__switch__sliderr:before {
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+  
+  /* Rounded sliders */
+  .headerContainer__switch__slider.round {
+    border-radius: 34px;
+  }
+  
+  .headerContainer__switch__slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /*-------------------------HERO----------------------*/
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    color: white;
+    text-align: center;
+    background-color: var(--primary-color);
+  }
+
+  /*-------------------------Marguerite------------------*/
+
+  .bioType{
+      grid-area:2/3/4/3;
+  }
+  .bioType {
+    margin: 10px;
+    border-image-width: 30px;
+    border-radius: 50%;
+    padding: 40;  
+    text-align: center;
+    align-items: center;
+    width: 40px;
+    block-size: 30%;
+    max-width: 30vw;
+
+  }

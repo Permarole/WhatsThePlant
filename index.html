@@ -38,7 +38,6 @@
 					<span></span>
 					<span></span>
 					<span></span>
-
 					<ul id="menu">
 						<a href="addPlant.html"><li>Add a plant</li></a>
 						<a href="library.html"><li>Dictionary</li></a>
@@ -47,71 +46,83 @@
 			</nav>
 		</header>
 
-		<section class="game">
-			<h3 class="game__intro">Test your knowledge:</h3>
-			<div class="game__imageContainer">
-				<img
-					src="./assets/plant_marguerite.jpg"
-					alt="Plant you have to determine"
-					class="game__imageContainer__img"
-					id="gameImage"
-				/>
-			</div>
-			<div class="game__answers">
-				<label class="game__answers__item" id="answer1label">
-					<input
-						type="radio"
-						id="answer1"
-						value="answer1"
-						name="user_answer"
-					/>
-					<span class="game__answers__item__text" id="answerText1"
-						>lorem</span
-					>
-				</label>
-				<label class="game__answers__item" id="answer2label">
-					<input
-						type="radio"
-						id="answer2"
-						value="answer2"
-						name="user_answer"
-					/>
-					<span class="game__answers__item__text" id="answerText2"
-						>lorem</span
-					>
-				</label>
-				<label class="game__answers__item" id="answer3label">
-					<input
-						type="radio"
-						id="answer3"
-						value="answer3"
-						name="user_answer"
-					/>
-					<span class="game__answers__item__text" id="answerText3"
-						>lorem</span
-					>
-				</label>
-				<label class="game__answers__item" id="answer4label">
-					<input
-						type="radio"
-						id="answer4"
-						value="answer4"
-						name="user_answer"
-					/>
-					<span class="game__answers__item__text" id="answerText4"
-						>lorem</span
-					>
-				</label>
-			</div>
-			<input
-				type="Submit"
-				class="game__answers__submit"
-				id="answerSubmit"
-			/>
-		</section>
-		<footer></footer>
-		<script src="darkMod.js"></script>
-		<!-- <script src="scriptJSON.js" type ="module" ></script> -->
-		<script src="main.js" type="module"></script>
-	</body>
+    <section class="game">
+      <h3 class="game__intro">Test your knowledge:</h3>
+      <div class="game__imageContainer">
+        <img
+          src="./assets/plant_marguerite.jpg"
+          alt="Plant you have to determine"
+          class="game__imageContainer__img"
+          id="gameImage"
+        />
+      </div>
+      <div class="game__answers">
+        <label class="game__answers__item" id="answer1label">
+          <input type="radio" id="answer1" value="answer1" name="user_answer" />
+          <span class="game__answers__item__text" id="answerText1">lorem</span>
+        </label>
+        <label class="game__answers__item" id="answer2label">
+          <input type="radio" id="answer2" value="answer2" name="user_answer" />
+          <span class="game__answers__item__text" id="answerText2">lorem</span>
+        </label>
+        <label class="game__answers__item" id="answer3label">
+          <input type="radio" id="answer3" value="answer3" name="user_answer" />
+          <span class="game__answers__item__text" id="answerText3">lorem</span>
+        </label>
+        <label class="game__answers__item" id="answer4label">
+          <input type="radio" id="answer4" value="answer4" name="user_answer" />
+          <span class="game__answers__item__text" id="answerText4">lorem</span>
+        </label>
+      </div>
+      <input type="Submit" class="game__answers__submit" id="answerSubmit" />
+    </section>
+
+    <footer class="footer">
+      <div class="footer__canvas">
+        <a href="#" class="footer__contact">Contact</a>
+
+        <div class="footer__social">
+          <a
+            href="https://github.com/Permarole/WhatsThePlant"
+            class="footer__social__link"
+            target="_blank"
+          >
+            <img
+              src="./assets/icon-github.png"
+              alt="Github icon"
+              class="footer__social__link__icon"
+            />
+          </a>
+
+          <a href="#" class="footer__social__link">
+            <img
+              src="./assets/icon-fb.png"
+              alt="Github icon"
+              class="footer__social__link__icon"
+            />
+          </a>
+
+          <a href="#" class="footer__social__link">
+            <img
+              src="./assets/icon-twitter.png"
+              alt="Github icon"
+              class="footer__social__link__icon"
+            />
+          </a>
+
+          <a href="#" class="footer__social__link">
+            <img
+              src="./assets/icon-insta.png"
+              alt="Github icon"
+              class="footer__social__link__icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="darkMod.js"></script>
+    <!-- <script src="scriptJSON.js" type ="module" ></script> -->
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

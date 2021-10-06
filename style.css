@@ -39,8 +39,11 @@
 
 html,
 body {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 body {
@@ -159,11 +162,12 @@ input:focus + .headerContainer__switch__slider {
 
 .game,
 .addPlant {
-	margin: 1em auto;
-	padding: 0 1rem;
-	display: flex;
-	flex-direction: column;
-	max-width: 24rem;
+  margin: 1em auto;
+  padding: 0 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 24rem;
 }
 
 .game__imageContainer {
@@ -305,4 +309,60 @@ input[type="radio"]:nth-of-type(2) {
 	background-color: var(--secondary-color);
 	color: var(--heading-color);
 	border: 2px solid var(--primary-color);
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: 2rem 3rem;
+  background-color: #292922;
+  color: white;
+}
+
+.footer__canvas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.footer__contact {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.footer__contact:hover {
+  text-decoration: underline;
+}
+
+.footer__social {
+  display: flex;
+}
+
+.footer__social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer__social__link + .footer__social__link {
+  margin-left: 0.6rem;
+}
+
+.footer__social__link__icon {
+  filter: brightness(0) invert(1);
+  display: block;
+}
+
+.footer__social__link:hover .footer__social__link__icon {
+  filter: brightness(0) invert(92%) sepia(20%) saturate(334%) hue-rotate(41deg)
+    brightness(102%) contrast(97%);
+}
+
+.footer__social__link:focus .footer__social__link__icon {
+  filter: brightness(0) invert(36%) sepia(30%) saturate(2625%)
+    hue-rotate(115deg) brightness(95%) contrast(96%);
 }
