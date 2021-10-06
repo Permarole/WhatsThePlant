@@ -74,6 +74,10 @@ img {
   border-radius: 50%;
 }
 
+#menu{
+  display: none;
+}
+
 /*---------------------Slidder Dark Mode-------------*/
 
 /* The switch - the box around the slider */
