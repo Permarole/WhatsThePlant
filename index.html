@@ -1,114 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 750px)"
-      href="desktopStyle.css"
-    />
-    <title>What's The Plant</title>
-  </head>
-  <body>
-    <header>
-      <div class="headerContainer">
-        <div class="headerContainer__backgroundLogo">
-          <img
-            class="headerContainer__backgroundLogo__logo"
-            src="./assets/logo_resized.svg"
-            alt="logo what's the plant"
-          /><!-- TODO : anchor on logo-->
-        </div>
-      </div>
-      <label class="headerContainer__switch">
-        <input type="checkbox" onclick="toggleDarkMode()" />
-        <span class="headerContainer__switch__slider round"></span>
-      </label>
-    </header>
-    <section class="hero">
-      <h1 class="hero__title">What's The Plant ?!</h1>
-    </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			media="screen and (min-width: 1000px)"
+			href="desktopStyle.css"
+		/>
+		<title>What's The Plant</title>
+	</head>
+	<body>
+		<header>
+			<div class="headerContainer">
+				<div class="headerContainer__backgroundLogo">
+					<a href="index.html">
+						<img
+							class="headerContainer__backgroundLogo__logo"
+							src="./assets/logo_resized.svg"
+							alt="logo what's the plant"
+						/>
+					</a>
+				</div>
+			</div>
+			<label class="headerContainer__switch">
+				<input type="checkbox" onclick="toggleDarkMode()" />
+				<span class="headerContainer__switch__slider round"></span>
+			</label>
+			<nav>
+				<section class="hero">
+					<h1 class="hero__title">What's The Plant ?!</h1>
+				</section>
+				<div id="menuToggle">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul id="menu">
+						<a href="addPlant.html"><li>Add a Plant</li></a>
+						<a href="library.html"><li>Dictionary</li></a>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section class="game">
+			<h3 class="game__intro">Test your knowledge:</h3>
+			<div class="game__imageContainer">
+				<img
+					src="./assets/plant_marguerite.jpg"
+					alt="Plant you have to determine"
+					class="game__imageContainer__img"
+					id="gameImage"
+				/>
+			</div>
+			<div class="game__answers">
+				<label class="game__answers__item" id="answer1label">
+					<input
+						type="radio"
+						id="answer1"
+						value="answer1"
+						name="user_answer"
+					/>
+					<span class="game__answers__item__text" id="answerText1"
+						>lorem</span
+					>
+				</label>
+				<label class="game__answers__item" id="answer2label">
+					<input
+						type="radio"
+						id="answer2"
+						value="answer2"
+						name="user_answer"
+					/>
+					<span class="game__answers__item__text" id="answerText2"
+						>lorem</span
+					>
+				</label>
+				<label class="game__answers__item" id="answer3label">
+					<input
+						type="radio"
+						id="answer3"
+						value="answer3"
+						name="user_answer"
+					/>
+					<span class="game__answers__item__text" id="answerText3"
+						>lorem</span
+					>
+				</label>
+				<label class="game__answers__item" id="answer4label">
+					<input
+						type="radio"
+						id="answer4"
+						value="answer4"
+						name="user_answer"
+					/>
+					<span class="game__answers__item__text" id="answerText4"
+						>lorem</span
+					>
+				</label>
+			</div>
+			<input
+				type="Submit"
+				class="game__answers__submit"
+				id="answerSubmit"
+			/>
+		</section>
 
-    <section class="game">
-      <h3 class="game__intro">Test your knowledge:</h3>
-      <div class="game__imageContainer">
-        <img
-          src="./assets/plant_marguerite.jpg"
-          alt="Plant you have to determine"
-          class="game__imageContainer__img"
-          id="gameImage"
-        />
-      </div>
-      <div class="game__answers">
-        <label class="game__answers__item" id="answer1label">
-          <input type="radio" id="answer1" value="answer1" name="user_answer" />
-          <span class="game__answers__item__text" id="answerText1">lorem</span>
-        </label>
-        <label class="game__answers__item" id="answer2label">
-          <input type="radio" id="answer2" value="answer2" name="user_answer" />
-          <span class="game__answers__item__text" id="answerText2">lorem</span>
-        </label>
-        <label class="game__answers__item" id="answer3label">
-          <input type="radio" id="answer3" value="answer3" name="user_answer" />
-          <span class="game__answers__item__text" id="answerText3">lorem</span>
-        </label>
-        <label class="game__answers__item" id="answer4label">
-          <input type="radio" id="answer4" value="answer4" name="user_answer" />
-          <span class="game__answers__item__text" id="answerText4">lorem</span>
-        </label>
-      </div>
-      <input type="Submit" class="game__answers__submit" id="answerSubmit" />
-    </section>
+		<footer class="footer">
+			<div class="footer__canvas">
+				<a href="#" class="footer__contact">Contact</a>
 
-    <footer class="footer">
-      <div class="footer__canvas">
-        <a href="#" class="footer__contact">Contact</a>
+				<div class="footer__social">
+					<a
+						href="https://github.com/Permarole/WhatsThePlant"
+						class="footer__social__link"
+						target="_blank"
+					>
+						<img
+							src="./assets/icon-github.png"
+							alt="Github icon"
+							class="footer__social__link__icon"
+						/>
+					</a>
 
-        <div class="footer__social">
-          <a
-            href="https://github.com/Permarole/WhatsThePlant"
-            class="footer__social__link"
-            target="_blank"
-          >
-            <img
-              src="./assets/icon-github.png"
-              alt="Github icon"
-              class="footer__social__link__icon"
-            />
-          </a>
+					<a href="#" class="footer__social__link">
+						<img
+							src="./assets/icon-fb.png"
+							alt="Github icon"
+							class="footer__social__link__icon"
+						/>
+					</a>
 
-          <a href="#" class="footer__social__link">
-            <img
-              src="./assets/icon-fb.png"
-              alt="Github icon"
-              class="footer__social__link__icon"
-            />
-          </a>
+					<a href="#" class="footer__social__link">
+						<img
+							src="./assets/icon-twitter.png"
+							alt="Github icon"
+							class="footer__social__link__icon"
+						/>
+					</a>
 
-          <a href="#" class="footer__social__link">
-            <img
-              src="./assets/icon-twitter.png"
-              alt="Github icon"
-              class="footer__social__link__icon"
-            />
-          </a>
+					<a href="#" class="footer__social__link">
+						<img
+							src="./assets/icon-insta.png"
+							alt="Github icon"
+							class="footer__social__link__icon"
+						/>
+					</a>
+				</div>
+			</div>
+		</footer>
 
-          <a href="#" class="footer__social__link">
-            <img
-              src="./assets/icon-insta.png"
-              alt="Github icon"
-              class="footer__social__link__icon"
-            />
-          </a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="darkMod.js"></script>
-    <!-- <script src="scriptJSON.js" type ="module" ></script> -->
-    <script src="main.js" type="module"></script>
-  </body>
+		<script src="darkMod.js"></script>
+		<!-- <script src="scriptJSON.js" type ="module" ></script> -->
+		<script src="main.js" type="module"></script>
+	</body>
 </html>
