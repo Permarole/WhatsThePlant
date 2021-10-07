@@ -275,6 +275,7 @@ header nav {
 	text-align: center;
 	background-color: var(--primary-color);
 	box-shadow: 5px 5px 5px black;
+	z-index: 2;
 }
 
 .game__imageContainer {
