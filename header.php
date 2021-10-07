@@ -17,7 +17,7 @@
       </a>
     </section>
     <div id="menuToggle" class="menuToggle">
-      <input type="checkbox" />
+      <input type="checkbox" class="inputToggle" />
       <div class="menuBurger">
         <span></span>
         <span></span>

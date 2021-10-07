@@ -170,6 +170,10 @@ header nav {
 	z-index: 1;
 }
 
+.indexDown {
+	z-index: 0 !important;
+}
+
 .menuToggle {
 	overflow: hidden;
 	position: absolute;
