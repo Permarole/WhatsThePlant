@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" media="screen and (min-width: 750px)" href="desktopStyle.css" />
+  <link rel="stylesheet" media="screen and (min-width: 1000px)" href="desktopStyle.css" />
   <title>What's The Plant</title>
 </head>
 
