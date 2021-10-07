@@ -182,9 +182,22 @@ input:focus + .headerContainer__switch__slider {
 	max-width: 24rem;
 }
 
+.game_imageContainer__restart {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	top: -40px;
+	right: -40px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: var(--primary-color);
+	box-shadow: 5px 5px 5px black;
+}
+
 .game__imageContainer {
 	display: flex;
 	justify-content: center;
+	position: relative;
 	align-items: center;
 	margin-bottom: 2rem;
 }

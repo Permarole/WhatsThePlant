@@ -7,6 +7,9 @@ class Game {
 		this.answersButtons = document.querySelectorAll(".game__answers__item");
 		this.submitButton = document.getElementById("answerSubmit");
 		this.descriptionParagraph = document.querySelector(".game_description");
+		this.restartButton = document.querySelector(
+			".game_imageContainer__restart"
+		);
 		this.plantsInfos = undefined;
 		this.plantToDefine = undefined;
 		this.eventListener = undefined;
@@ -23,19 +26,22 @@ class Game {
 		this.plantDescription = this.getDescription();
 		this.initDescription();
 		this.eventListener = this.initEventListenerOnSubmit();
+		this.restartEvent = this.initEventListenerOnRestart();
 		this.initImage();
 		this.initButton();
 	}
 
 	reset() {
 		this.displayPlantDescription();
+		this.resetButton();
+		this.displaySubmit();
+		this.displayRestartButton();
 		this.plantsInfos = this.getplantsInfos();
 		this.plantToDefine = this.getOnePlant();
 		this.plantDescription = this.getDescription();
 		this.initImage();
 		this.initButton();
 		this.initDescription();
-		this.resetButton();
 	}
 
 	initImage() {
@@ -90,6 +96,14 @@ class Game {
 		this.descriptionParagraph.classList.toggle("none");
 	}
 
+	displayRestartButton() {
+		this.restartButton.classList.toggle("none");
+	}
+
+	displaySubmit() {
+		this.submitButton.classList.toggle("none");
+	}
+
 	getOnePlant() {
 		/* return one plant from this.plantsData using one random name of this.plantName */
 		let plant =
@@ -104,6 +118,12 @@ class Game {
 		/* init event listener on submit button, call function handleSubmit on Click */
 		this.submitButton.addEventListener("click", () => {
 			this.handleSubmit();
+		});
+	}
+
+	initEventListenerOnRestart() {
+		this.restartButton.addEventListener("click", () => {
+			this.reset();
 		});
 	}
 
@@ -123,6 +143,8 @@ class Game {
 			}
 
 			this.displayPlantDescription();
+			this.displayRestartButton();
+			this.displaySubmit();
 		}
 	}
 
