@@ -5,6 +5,8 @@
     --acent-color: #ec7c32;
     --bg-color: #fffef8;
     --heading-color: #292922;
+  
+   
   }
   
   html,
@@ -22,8 +24,12 @@
   }
   
   img {
+    display: flex;
     max-width: 100%;
-    height: auto;
+    height: 65vw;
+    margin: 12vw; 
+    padding-left: 5%;
+    padding-right: 5%;
   }
   
   /*---------------------- Header ------------------- */
@@ -114,7 +120,9 @@
   }
   
   /*-------------------------HERO----------------------*/
-  
+  .
+
+
   .hero {
     display: flex;
     align-items: center;
@@ -126,19 +134,120 @@
   }
 
   /*-------------------------Marguerite------------------*/
-
-  .bioType{
-      grid-area:2/3/4/3;
+  
+  .imageContainer_img{
+    display: flex;
   }
-  .bioType {
+
+
+  .nameContainer{
+    position: relative;
+  }
+
+
+  .nameplant{
+    margin: 10px;
+    padding: 0;
+    height: 2.5cm;
+    font-weight: bolder;
+    border-image-width: 30px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 50%;
+    border-style: none;
+    clip: auto;
+    border-radius: 30px;
+    box-shadow: rgb(181 181 181) 1px 1px 3px 2px;
+    background-color: #ec7c32;
+    word-wrap: break-word;
+  }
+
+  .local{
+    margin: -10px;
+    display:flex;
+    justify-content: flex-start;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    
+  }
+
+  .p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20cm;
+    border-style: none;
+  }
+
+
+  .flex{
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     border-image-width: 30px;
     border-radius: 50%;
-    padding: 40;  
+    padding: 40px; 
+  }
+  
+  .itemFlex_container{
+    display: flex;
+  }
+
+  .itemFlex_container1{
+    display: flex;
+  }
+
+  .itemFlex_container2{
+    display:flex;
+  }
+
+  .itemFlex {
+    display: flex;
+    margin: 5px;
+    border-image-width: 30px;
+    border-radius: 50%;
+    padding: 20px;  
     text-align: center;
     align-items: center;
-    width: 40px;
-    block-size: 30%;
-    max-width: 30vw;
-
+    clip: auto;
+    border-radius: 40px;
+    box-shadow: rgb(181 181 181) 1px 1px 3px 2px;
+    background-color: #e3fbce;
+    
   }
+
+  
+  .titre{
+    display: flex inline-block;
+    margin: 10px 0px 10px 10px;
+    border-image-width: 30px;
+    border-radius: 50%;
+    padding: 20px 0px 20px 20px;  
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    white-space:nowrap;
+    width: 80px;
+    block-size: 10%;
+    max-width: 30vw;
+  }
+
+
+  .value{
+    margin: 10px 10px 10px 0px;
+    border-image-width: 30px;
+    border-radius: 50%;
+    padding: 20px 20px 20px 10px;  
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .itemFlex{
+    word-wrap: break-word;
+    display: flex; 
+    margin-bottom: 30px;
+  }
+  
+  @mediaqueries()
