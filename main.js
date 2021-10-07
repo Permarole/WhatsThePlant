@@ -8,9 +8,3 @@ plantsArray.then((data) => {
 	game.init(plantsData);
 	// wait for click on submit
 });
-
-let reset = document.querySelector("#reset");
-reset.addEventListener("click", function () {
-	console.log(game);
-	game.reset();
-});

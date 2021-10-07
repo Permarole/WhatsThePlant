@@ -15,6 +15,9 @@
   <section class="game">
     <h3 class="game__intro">Test your knowledge:</h3>
     <div class="game__imageContainer">
+      <button class="game_imageContainer__restart none">
+        <img src="./assets/restart.svg" alt="">
+      </button>
       <img src="./assets/plant_marguerite.jpg" alt="Plant you have to determine" class="game__imageContainer__img" id="gameImage" />
     </div>
     <div class="game__answers">
