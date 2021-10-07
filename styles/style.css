@@ -261,7 +261,7 @@ header nav {
 
 .game,
 .addPlant {
-	margin: 1em auto;
+	margin: 5% auto;
 	padding: 0 1rem;
 	flex-grow: 1;
 	display: flex;
@@ -437,7 +437,7 @@ input[type="radio"]:nth-of-type(2) {
 }
 
 .footer {
-	margin-top: 3rem;
+	margin-top: 1rem;
 	padding: 2rem 3rem;
 	background-color: #292922;
 	color: white;
