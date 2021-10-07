@@ -52,6 +52,7 @@
 
 html,
 body {
+	font-family: "PT Sans", sans-serif;
 	padding: 0;
 	margin: 0;
 	display: flex;
@@ -234,6 +235,8 @@ header nav {
 /*-------------------------HERO----------------------*/
 
 .hero {
+	font-family: "Rouge Script", cursive;
+	font-size: 2.4em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
