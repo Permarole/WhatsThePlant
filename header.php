@@ -25,7 +25,7 @@
         <a class="menuLink" href="addPlant.php">
           <li>Add a Plant</li>
         </a>
-        <a class="menuLink" id="reset" href="#">
+        <a class="menuLink" href="#">
           <li>Dictionary</li>
         </a>
       </ul>
