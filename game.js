@@ -1,140 +1,170 @@
 class Game {
-  constructor(plantsData) {
-    this.colorProperties = getComputedStyle(document.body);
-    this.plantsData = plantsData;
-    this.game = document.querySelector('.game');
-    this.gameImage = document.getElementById('gameImage');
-    this.answersButtons = document.querySelectorAll('.game__answers__item');
-    this.submitButton = document.getElementById('answerSubmit');
-    this.plantsInfos = this.getplantsInfos();
-    this.plantToDefine = this.getOnePlant();
-    this.eventListener = this.initEventListenerOnSubmit();
-  }
+	constructor(plantsData) {
+		this.colorProperties = getComputedStyle(document.body);
+		this.plantsData = undefined;
+		this.game = document.querySelector(".game");
+		this.gameImage = document.getElementById("gameImage");
+		this.answersButtons = document.querySelectorAll(".game__answers__item");
+		this.submitButton = document.getElementById("answerSubmit");
+		this.descriptionParagraph = document.querySelector(".game_description");
+		this.plantsInfos = undefined;
+		this.plantToDefine = undefined;
+		this.eventListener = undefined;
+		this.plantDescription = undefined;
+	}
 
-  init() {
-    /* Init content in :document div :
+	init(data) {
+		/* Init content in :document div :
         - set image
         - set value background color for the buttons */
+		this.plantsData = data;
+		this.plantsInfos = this.getplantsInfos();
+		this.plantToDefine = this.getOnePlant();
+		this.plantDescription = this.getDescription();
+		this.initDescription();
+		this.eventListener = this.initEventListenerOnSubmit();
+		this.initImage();
+		this.initButton();
+	}
 
-    this.initImage();
-    this.initButton();
-  }
+	reset() {
+		this.displayPlantDescription();
+		this.plantsInfos = this.getplantsInfos();
+		this.plantToDefine = this.getOnePlant();
+		this.plantDescription = this.getDescription();
+		this.initImage();
+		this.initButton();
+		this.initDescription();
+		this.resetButton();
+	}
 
-  initImage() {
-    /* Init content in document div : set image source*/
-    this.gameImage.src =
-      this.plantToDefine[Object.keys(this.plantToDefine)[0]].picture;
-  }
+	initImage() {
+		/* Init content in document div : set image source*/
+		this.gameImage.src =
+			this.plantToDefine[Object.keys(this.plantToDefine)[0]].picture;
+	}
 
-  initButton() {
-    /* For every button selected in this.answersButtons:
+	initButton() {
+		/* For every button selected in this.answersButtons:
          set value from this.plantsInfos and set span's text and background color depending on darkmode */
-    let index = 0;
-    for (let button of this.answersButtons) {
-      let plant = this.plantsInfos[index];
-      button.children[0].value = plant[Object.keys(plant)[0]].name; // children[0] >>>> input, set value
-      button.children[1].innerHTML = plant[Object.keys(plant)[0]].name; // children[1] >>>> span,  set yext
-      // if (button.children[1].classList.contains('darkModeButton')) {
-      //   // check for class darkModeButton
-      //   // set dark background
-      //   button.children[1].style.backgroundColor =
-      //     this.colorProperties.getPropertyValue('--button-dark-color');
-      // } else {
-      //   // set default background
-      //   button.children[1].style.backgroundColor =
-      //     this.colorProperties.getPropertyValue('--bg-color');
-      // }
-      index++;
-    }
-  }
+		let index = 0;
+		for (let button of this.answersButtons) {
+			let plant = this.plantsInfos[index];
+			button.children[0].value = plant[Object.keys(plant)[0]].name; // children[0] >>>> input, set value
+			button.children[1].innerHTML = plant[Object.keys(plant)[0]].name; // children[1] >>>> span,  set yext
+			index++;
+		}
+	}
 
-  getplantsInfos() {
-    /* get 4 random element from this.plantsData :
+	initDescription() {
+		this.descriptionParagraph.innerHTML = this.plantDescription;
+		console.log(this.descriptionParagraph);
+	}
+
+	getplantsInfos() {
+		/* get 4 random element from this.plantsData :
         using set : get 4 uniques elements from this.plantsData
         return an array thanks to the method Array.from() */
-    const set = new Set();
-    while (set.size < 4) {
-      set.add(
-        this.plantsData[
-          Object.keys(this.plantsData)[
-            Math.floor(Math.random() * this.plantsData.length)
-          ]
-        ]
-      );
-    }
-    return Array.from(set);
-  }
+		const set = new Set();
+		while (set.size < 4) {
+			set.add(
+				this.plantsData[
+					Object.keys(this.plantsData)[
+						Math.floor(Math.random() * this.plantsData.length)
+					]
+				]
+			);
+		}
+		return Array.from(set);
+	}
 
-  getOnePlant() {
-    /* return one plant from this.plantsData using one random name of this.plantName */
-    let plant =
-      this.plantsInfos[Math.floor(Math.random() * this.plantsInfos.length)];
+	getDescription() {
+		console.log(
+			this.plantToDefine[Object.keys(this.plantToDefine)[0]].description
+		);
+		return this.plantToDefine[Object.keys(this.plantToDefine)[0]]
+			.description;
+	}
 
-    return plant;
-  }
+	displayPlantDescription() {
+		this.descriptionParagraph.classList.toggle("none");
+	}
 
-  initEventListenerOnSubmit() {
-    /* init event listener on submit button, call function handleSubmit on Click */
-    this.submitButton.addEventListener('click', () => {
-      this.handleSubmit();
-    });
-  }
+	getOnePlant() {
+		/* return one plant from this.plantsData using one random name of this.plantName */
+		let plant =
+			this.plantsInfos[
+				Math.floor(Math.random() * this.plantsInfos.length)
+			];
 
-  handleSubmit() {
-    /* handle game's behaviors while submitted :
+		return plant;
+	}
+
+	initEventListenerOnSubmit() {
+		/* init event listener on submit button, call function handleSubmit on Click */
+		this.submitButton.addEventListener("click", () => {
+			this.handleSubmit();
+		});
+	}
+
+	handleSubmit() {
+		/* handle game's behaviors while submitted :
         - check wich button has been checked 
         - calls updateButton  (cf updateGame descripton)*/
-    if (this.isCheckeded) {
-      for (let answerButton of this.answersButtons) {
-        if (answerButton.children[0].checked) {
-          this.updateButton(answerButton, true);
-        } else {
-          this.updateButton(answerButton);
-        }
-      }
+		console.log(this.isCheckeded());
+		if (this.isCheckeded()) {
+			for (let answerButton of this.answersButtons) {
+				console.log(answerButton);
+				if (answerButton.children[0].checked) {
+					this.updateButton(answerButton, true);
+				} else {
+					this.updateButton(answerButton);
+				}
+			}
 
-      this.displayPlantDescription();
-    }
-  }
+			this.displayPlantDescription();
+		}
+	}
 
-  isCheckeded() {
-    for (let button of this.answersButtons) {
-      if (button.children[0].checked) {
-        return true;
-      }
-    }
-    return false;
-  }
+	isCheckeded() {
+		for (let button of this.answersButtons) {
+			if (button.children[0].checked) {
+				return true;
+			}
+		}
+		return false;
+	}
 
-  updateButton(button, checked = false) {
-    // Update button background color based on checked value and answer correctness
-    if (checked && this.checkAnswer(button.children[0])) {
-      button.children[1].classList.toggle('rightAnswer');
-    } else if (checked && !this.checkAnswer(button.children[0])) {
-      button.children[1].classList.toggle('wrongAnswer');
-    } else if (this.checkAnswer(button.children[0])) {
-      button.children[1].classList.toggle('rightAnswer');
-    } else {
-      button.children[1].classList.toggle('notAnswered');
-    }
-  }
+	updateButton(button, checked = false) {
+		// Update button background color based on checked value and answer correctness
+		if (checked && this.checkAnswer(button.children[0])) {
+			button.children[1].classList.toggle("rightAnswer");
+		} else if (checked && !this.checkAnswer(button.children[0])) {
+			button.children[1].classList.toggle("wrongAnswer");
+		} else if (this.checkAnswer(button.children[0])) {
+			button.children[1].classList.toggle("rightAnswer");
+		} else {
+			button.children[1].classList.toggle("notAnswered");
+		}
+		console.log(button.children[1].classList);
+	}
 
-  displayPlantDescription() {
-    this.game.insertAdjacentHTML(
-      'beforeend',
-      `<p class="game__description">${
-        this.plantToDefine[Object.keys(this.plantToDefine)].description
-      }</p>`
-    );
-  }
+	resetButton() {
+		for (let answerButton of this.answersButtons) {
+			answerButton.children[1].classList.remove("rightAnswer");
+			answerButton.children[1].classList.remove("notAnswered");
+			answerButton.children[1].classList.remove("wrongAnswer");
+		}
+	}
 
-  checkAnswer(clicked) {
-    /* Return boolean
+	checkAnswer(clicked) {
+		/* Return boolean
         Check input checked value is equal to plant name to define */
-    return (
-      clicked.value === this.plantToDefine[Object.keys(this.plantToDefine)].name
-    );
-  }
+		return (
+			clicked.value ===
+			this.plantToDefine[Object.keys(this.plantToDefine)].name
+		);
+	}
 }
 
 export { Game };
