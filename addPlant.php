@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" media="screen and (min-width: 1000px)" href="desktopStyle.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" media="screen and (min-width: 1000px)" href="./styles/desktopStyle.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
@@ -79,9 +79,9 @@
     </form>
   </section>
   <?php include 'footer.php'; ?>
-  <script src="darkMod.js"></script>
+  <script src="./scripts/darkMod.js"></script>
   <!-- <script src="scriptJSON.js" type ="module" ></script> -->
-  <script src="addPlant.js"></script>
+  <script src="./scripts/addPlant.js"></script>
 </body>
 
 </html>
