@@ -16,12 +16,15 @@
         <h1 class="hero__title">What's The Plant ?!</h1>
       </a>
     </section>
-    <div id="menuToggle">
+    <div id="menuToggle" class="menuToggle">
       <input type="checkbox" />
-      <span></span>
-      <span></span>
-      <span></span>
-      <ul id="menu">
+      <div class="menuBurger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul id="menu" class="menu">
         <a class="menuLink" href="addPlant.php">
           <li>Add a Plant</li>
         </a>
