@@ -1,4 +1,4 @@
-let requestURL = "./dataBase.json";
+let requestURL = "./database/dataBase.json";
 
 const plantsArray = fetch(requestURL).then((response) => response.json());
 
