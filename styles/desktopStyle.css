@@ -137,6 +137,10 @@ li {
 	flex-wrap: wrap;
 }
 
+.game__answers__item__text {
+	margin: 0.5em;
+}
+
 .addPlantForm {
 	display: flex;
 	flex-direction: row;
