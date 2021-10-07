@@ -34,4 +34,6 @@
       </ul>
     </div>
   </nav>
+
+  <script src="./scripts/darkMod.js"></script>
 </header>

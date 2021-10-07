@@ -79,7 +79,6 @@
     </form>
   </section>
   <?php include 'footer.php'; ?>
-  <script src="./scripts/darkMod.js"></script>
   <!-- <script src="scriptJSON.js" type ="module" ></script> -->
   <script src="./scripts/addPlant.js"></script>
 </body>
