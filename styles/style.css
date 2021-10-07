@@ -15,18 +15,18 @@
 /*------------ toggle colors gestion -------------*/
 .wrongAnswer {
 	background-color: var(--accent-color) !important;
-	box-shadow: inset 2px 2px 2px 0 darkslategray !important;
+	box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.5) !important;
 }
 
 .rightAnswer {
 	background-color: var(--primary-color) !important;
-	box-shadow: 2px 2px 2px 0 darkslategray !important;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) !important;
 }
 
 .notAnswered {
 	background-color: var(--not-answered) !important;
 	color: black !important;
-	box-shadow: inset 2px 2px 2px 0 darkslategray !important;
+	box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.5) !important;
 }
 
 .darkMode {
@@ -274,7 +274,7 @@ header nav {
 	border-radius: 50%;
 	text-align: center;
 	background-color: var(--primary-color);
-	box-shadow: 5px 5px 5px black;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 	z-index: 2;
 }
 
@@ -310,7 +310,7 @@ header nav {
 }
 
 .game__answers__item__text {
-	box-shadow: 2px 2px 2px 0 darkslategray;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .game__answers__item__text,
