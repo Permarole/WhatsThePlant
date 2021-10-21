@@ -21,7 +21,7 @@
       <button class="game_imageContainer__restart none">
         <img src="./assets/restart.svg" alt="">
       </button>
-      <img src="./assets/plant_marguerite.jpg" alt="Plant you have to determine" class="game__imageContainer__img" id="gameImage" />
+      <img src="https://c.tenor.com/I6kN-6X7nhAAAAAi/loading-buffering.gif" alt="Plant you have to determine" class="game__imageContainer__img" id="gameImage" />
     </div>
     <div class="game__answers">
       <label class="game__answers__item" id="answer1label">
@@ -48,6 +48,7 @@
   <?php include 'footer.php'; ?>
   <script src="./scripts/game.js"></script>
   <!-- <script src="scriptJSON.js" type ="module" ></script> -->
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
   <script src="./scripts/main.js" type="module"></script>
 </body>
 
